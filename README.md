@@ -503,4 +503,4 @@ The following content and approvals are needed before design and development are
 
 ## Launch Recommendation
 
-The best first version is a static, content-first website with a strong information architecture, a maroon DoSt-aligned design system, and a support-first homepage. This gives MITR a low-maintenance but credible digital presence while keeping room for later additions such as announcements, search, or a lightweight CMS.   
+The best first version is a static, content-first website with a strong information architecture, a maroon DoSt-aligned design system, and a support-first homepage. This gives MITR a low-maintenance but credible digital presence while keeping room for later additions such as announcements, search, or a lightweight CMS.  
