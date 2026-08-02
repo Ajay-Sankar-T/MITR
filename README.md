@@ -93,21 +93,35 @@ The visual language should align with the institutional tone of `dost.iitm.ac.in
 
 ### Color scheme
 
-The site should use a maroon-led palette inspired by the DoSt website. The retrieved source material confirms DoSt as the parent institutional context, though it does not publish an official token sheet.  The following tokens are proposed implementation values for design and development consistency:
+The site should use the actual maroon and warm-neutral values from the provided DoSt/MITR HTML-CSS reference rather than an inferred palette. The attached color inventory identifies `#800000` as the MITR maroon used for buttons, headings, and links, `#a00000` as the button hover color, `#7A0A0A` as an IITM maroon border value, `rgb(255 244 232)` as a MITR section background, and a deeper maroon gradient family including `#5b0f1b`, `#8e1e2f`, and `#c3273f` for wellness-themed surfaces. 
+
+The following design tokens should replace the earlier proposed palette:
 
 | Token | Value | Usage |
 |---|---|---|
-| `--color-primary` | `#6B1F2B` | Primary CTAs, links, highlights |
-| `--color-primary-hover` | `#541822` | Hover and active states |
-| `--color-primary-soft` | `#F4E9EC` | Soft accent backgrounds |
-| `--color-bg` | `#FAF7F5` | Main page background |
-| `--color-surface` | `#FFFFFF` | Cards and elevated content |
-| `--color-surface-alt` | `#F6F0EE` | Alternate section backgrounds |
-| `--color-text` | `#22181A` | Primary text |
-| `--color-text-muted` | `#6E5D60` | Secondary text |
-| `--color-border` | `#E3D7D9` | Borders and dividers |
-| `--color-success` | `#3D6B4F` | Positive/reassurance states |
-| `--color-warning` | `#A56A2A` | Caution or urgent informational states |
+| `--color-primary` | `#800000` | Primary CTAs, headings, links, key action states.  |
+| `--color-primary-hover` | `#a00000` | Hover state for primary buttons and interactive links.  |
+| `--color-primary-dark` | `#7A0A0A` | Borders, strong separators, or emphasized maroon accents.  |
+| `--color-gradient-start` | `#5b0f1b` | Wellness hero and highlight gradient start.  |
+| `--color-gradient-mid` | `#8e1e2f` | Wellness hero and highlight gradient midpoint.  |
+| `--color-gradient-end` | `#c3273f` | Wellness hero and highlight gradient end.  |
+| `--color-gradient-hover-start` | `#6d1020` | Hover or active gradient start state.  |
+| `--color-gradient-hover-mid` | `#9d2034` | Hover or active gradient midpoint.  |
+| `--color-gradient-hover-end` | `#d62d47` | Hover or active gradient end state.  |
+| `--color-footer-start` | `#7a1f2b` | Footer and deeper accent surfaces.  |
+| `--color-footer-end` | `#b53545` | Footer gradient end or supporting highlight band.  |
+| `--color-bg` | `rgb(255 244 232)` | Main MITR section background and warm page canvas.  |
+| `--color-surface` | `#ffffff` | Cards, floating panels, and clean readable surfaces.  |
+| `--color-text` | `#2d0c11` | Primary dark text on warm backgrounds.  |
+| `--color-text-muted` | `#5f3b41` | Secondary text, metadata, and supporting copy.  |
+| `--color-topbar-bg` | `rgb(206 146 82)` | Optional warm topbar or supporting background tone from the source stylesheet.  |
+| `--color-video-bg` | `#1a1210` | Dark media or overlay background for embedded video areas.  |
+
+Recommended branded gradients from the attached reference:
+
+- `linear-gradient(135deg, #5b0f1b 0%, #8e1e2f 45%, #c3273f 100%)` for wellness hero sections. 
+- `linear-gradient(135deg, #6d1020 0%, #9d2034 45%, #d62d47 100%)` for hover or active emphasis states. 
+- `linear-gradient(135deg, #7a1f2b, #b53545)` for footer or institutional accent bands. 
 
 ### Typography
 
